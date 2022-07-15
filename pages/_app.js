@@ -6,8 +6,6 @@ import Head from "next/head"
 const APP_ID = process.env.NEXT_PUBLIC_APP_ID
 const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL
 
-console.log(APP_ID)
-
 function MyApp({ Component, pageProps }) {
     return (
         <div>
