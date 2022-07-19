@@ -6,8 +6,6 @@ import NFTBox from "../components/NFTBox"
 export default function Home() {
     const { isWeb3Enabled } = useMoralis()
     const { data: listedNfts, isFetching: fetchingListedNfts } = useMoralisQuery(
-        // Table Name
-        // Function for the query
         "ActiveItem",
         (query) => query.limit(10).descending("tokenId")
     )
