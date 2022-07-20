@@ -9,7 +9,6 @@ export default function Home() {
         "ActiveItem",
         (query) => query.limit(10).descending("tokenId")
     )
-    console.log(listedNfts)
 
     return (
         <div className="container mx-auto">
